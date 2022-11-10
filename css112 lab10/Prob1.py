@@ -6,5 +6,3 @@ def Problem1(n):
     xyindx = tuple(zip(*indx))
     onesk[xyindx] = 0
     return onesk
-
-print(Problem1(3))
