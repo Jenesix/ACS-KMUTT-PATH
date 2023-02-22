@@ -44,6 +44,7 @@ public:
         if (getLength() > size) {
             printremoveScore(tail->name, tail->score);
         }
+        sort(false);
     }
     void printAddScore(string name, int score) {
         cout <<  name << " got new score = " << score << endl << endl;
@@ -145,6 +146,7 @@ void printremoveScore(string name, int score) {
             cout << current->name << " " << current->score << "\n";
             current = current->next;
         }
+        
     }
 };
 
