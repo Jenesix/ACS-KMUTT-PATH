@@ -1,4 +1,4 @@
-import numpy as np
+ุimport numpy as np
 
 A = np.array([[1, 2, 3], [2, 3, 1], [-2, 3, -2]])
 
@@ -14,6 +14,12 @@ for k in range(n):
     for i in range(k+1, n):
         L[i, k] = (A[i, k] - np.dot(L[i, :k], U[:k, k])) / U[k, k]
 
+def LU_answer(L,U,b)
+    y = np.linalg.solve(L,b)
+    x = np.linalg.solve(U,y)
+    
+    return x
+    
 print("L =")
 print(L)
 print("U =")
